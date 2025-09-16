@@ -11,7 +11,7 @@ const StickyNavbar = () => {
         
         {/* Logo */}
         <Link to="/" className="logo">
-          Material Navbar
+         Dinesh Rathod 
         </Link>
 
         {/* Desktop Menu */}
