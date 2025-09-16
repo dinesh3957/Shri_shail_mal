@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import './index.css';
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/Shri_shail_mal">
       <div className="p-6">
         
      
@@ -13,7 +13,7 @@ function App() {
       
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
