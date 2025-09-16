@@ -5,12 +5,8 @@ function App() {
   return (
     <BrowserRouter basename="/Shri_shail_mal">
       <div className="p-6">
-        
-     
         <Routes>
           <Route path="/" element={<HomePage></HomePage>} />
-        
-      
         </Routes>
       </div>
     </BrowserRouter>
