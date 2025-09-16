@@ -1,0 +1,91 @@
+.teachers-wrapper {
+  width: 100%;
+}
+
+/* Desktop view (default) */
+.teachers-container {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.teachers-container::-webkit-scrollbar {
+  display: none;
+}
+
+.teacher-card {
+  display: flex;
+  align-items: center;
+  background: #e6e6e6;
+  border-radius: 40px;
+  padding: 8px 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.teacher-card:hover {
+  transform: scale(1.05);
+}
+
+.teacher-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.teacher-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Smaller size for mobile */
+.teacher-card.small {
+  padding: 6px 10px;
+}
+.teacher-img.small {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+.teacher-name.small {
+  font-size: 13px;
+}
+
+/* Mobile view: show only 2 cards + next button */
+.mobile-view {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+.mobile-cards {
+  display: flex;
+  gap: 10px;
+}
+
+.next-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.next-btn:hover {
+  background: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
+}
